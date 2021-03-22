@@ -1,0 +1,28 @@
+<html>
+    <!-- kepala dan judul -->
+    <head>
+        <title>jquery</title>
+        <!-- script jquery -->
+        <script src="jquery-3.6.0.js"></script>
+        <!-- javascript -->
+        <script type="text/javascript">
+        $(document).ready(function () {
+            // kontrol tombol sembunyi
+            $(".sembunyi").click(function () {
+                $("#foto").hide("slow")});
+            // kontrol tombol muncul
+            $(".tampil").click(function () {
+                $("#foto").show("slow")
+            });
+        });
+        </script>
+    </head>
+    <body>
+        <!-- button sembunyi -->
+        <button class="sembunyi">sembunyikan</button>
+        <!-- button tampil -->
+        <button class="tampil">tampilkan</button>
+        <!-- paragraf tempat gambar muncul -->
+        <p> <img id="foto" src="logoupnbaru.png"> </p>
+    </body>
+</html>

@@ -1,0 +1,38 @@
+<html>
+    <!-- kepala dan judul -->
+    <head>
+        <title>selector id</title>
+        <!-- javascrip dan jquery -->
+        <script type="text/javascript" src="jquery-3.6.0.js"></script>
+        <script type="text/javascript">
+            // mengammbil elemen
+            $(document).ready(function () {
+                $("#daftar").addClass("merahkuning");
+            })
+        </script>
+        <!-- css -->
+        <style type="text/css">
+            /* desain  */
+            .merahkuning{
+                color: orange;
+                font-weight: bold;
+                background-color: green;
+                padding: 3px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- paragrap -->
+        <div>
+            <p>paragraf pertama</p>
+        </div>
+        <div>
+            <!-- list -->
+            <ul id="daftar"> <!-- memanggil javascript -->
+                <li>item1</li>
+                <li>item2</li>
+                <li>item3</li>
+            </ul>
+        </div>
+    </body>
+</html>
